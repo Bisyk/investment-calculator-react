@@ -15,6 +15,7 @@ export default function UserInput({ setInputValues }) {
             onChange={(event) =>
               hanldeSetInputValues(event, "initialInvestment")
             }
+            required
           />
         </p>
         <p>
@@ -24,6 +25,7 @@ export default function UserInput({ setInputValues }) {
             onChange={(event) =>
               hanldeSetInputValues(event, "annualInvestment")
             }
+            required
           />
         </p>
       </div>
@@ -33,6 +35,7 @@ export default function UserInput({ setInputValues }) {
           <input
             type="number"
             onChange={(event) => hanldeSetInputValues(event, "expectedReturn")}
+            required
           />
         </p>
         <p>
@@ -40,6 +43,7 @@ export default function UserInput({ setInputValues }) {
           <input
             type="number"
             onChange={(event) => hanldeSetInputValues(event, "duration")}
+            required
           />
         </p>
       </div>
